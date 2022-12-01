@@ -65,13 +65,10 @@ class AsciiGenerator:
             txt.write(str_result)
 
 
-b = AsciiGenerator('ganyu.jpg', 150, 'L', 'ascii_image.txt')
+# should add a 'prompt' to ask user for image file
+b = AsciiGenerator('images/ganyu.jpg', 150, 'L', 'ascii_image.txt')
 b.process()
-print(os.listdir())
 
-x = os.listdir()
-if 'ganyu.jpg' in x:
-    print('exists')
 
 a = 0
 b = 1
